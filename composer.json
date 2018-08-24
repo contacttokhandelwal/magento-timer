@@ -29,4 +29,11 @@
             ]
         ]
     }
+    ,
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "BlueAcorn\\Productcountdown\\": ""
+        }
+    }
 }
