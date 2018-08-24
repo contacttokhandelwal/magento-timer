@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     BlueAcorn\ProductCountdown
+ * @version     1.0.0
+ * @author      Blue Acorn, Inc. <code@blueacorn.com>
+ * @copyright   Copyright © 2018 Blue Acorn, Inc.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="blueacorn" translate="label" sortOrder="1">
+            <label>BlueAcorn</label>
+        </tab>
+        <section id="blueAcorn_productCountdown" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Product Countdown Timer</label>
+            <tab>blueacorn</tab>
+            <resource>BlueAcorn_ProductCountdown::blueAcorn_productCountdown</resource>
+            <group id="timer" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1"
+                   showInStore="0">
+                <label>Archive Category</label>
+                <field id="cat_id" translate="label comment" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Category ID</label>
+                    <comment><![CDATA[Define the category id where products will move after timer is completed]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
